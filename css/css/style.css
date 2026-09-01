@@ -138,4 +138,157 @@ a {
         padding: 70px 0;
     }
 
+    .nav-container {
+        width: 92%;
+        min-height: 70px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 0.82rem;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+
+    .hero-description {
+        font-size: 1.05rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================
+   8. NAVIGATION
+========================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(247, 243, 239, 0.92);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(231, 221, 215, 0.8);
+}
+
+.nav-container {
+    width: min(1120px, 88%);
+    margin: 0 auto;
+
+    min-height: 78px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    position: relative;
+    font-size: 0.95rem;
+    color: var(--muted);
+
+    transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: var(--text);
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--accent);
+
+    transition: width 0.25s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================
+   9. HERO SECTION
+========================= */
+
+.hero {
+    min-height: calc(100vh - 78px);
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.eyebrow {
+    display: inline-block;
+
+    margin-bottom: 24px;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+
+    color: var(--accent);
+}
+
+.hero h1 {
+    max-width: 900px;
+    margin-bottom: 28px;
+}
+
+.hero h1 span {
+    color: var(--accent);
+}
+
+.hero-description {
+    max-width: 690px;
+
+    margin-bottom: 34px;
+
+    font-size: 1.16rem;
+    line-height: 1.8;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
 }
