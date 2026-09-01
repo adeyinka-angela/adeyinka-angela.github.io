@@ -1,1 +1,141 @@
+/* =========================
+   1. GLOBAL RESET
+========================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   2. COLOR SYSTEM
+========================= */
+
+:root {
+    --bg: #f7f3ef;
+    --surface: #ffffff;
+    --text: #24211f;
+    --muted: #746d68;
+    --accent: #c97a63;
+    --accent-dark: #a95f4a;
+    --border: #e7ddd7;
+}
+
+
+/* =========================
+   3. BASE PAGE STYLE
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+
+/* =========================
+   4. GENERAL LAYOUT
+========================= */
+
+section {
+    width: min(1120px, 88%);
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.15;
+}
+
+h1 {
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    letter-spacing: -0.04em;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    color: var(--muted);
+}
+
+
+/* =========================
+   5. LINKS
+========================= */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================
+   6. BUTTONS
+========================= */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 24px;
+
+    border-radius: 999px;
+
+    background: var(--accent);
+    color: white;
+
+    font-weight: 600;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.button:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.button.secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--text);
+}
+
+.button.secondary:hover {
+    background: var(--text);
+    color: white;
+}
+
+
+/* =========================
+   7. MOBILE BASE
+========================= */
+
+@media (max-width: 768px) {
+
+    section {
+        width: min(92%, 1120px);
+        padding: 70px 0;
+    }
+
+}
