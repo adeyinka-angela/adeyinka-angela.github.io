@@ -732,7 +732,7 @@ a {
         margin-bottom: 40px;
     }
 
-    .case-study-hero h4 {
+    .case-study-hero h3 {
         font-size: clamp(2.5rem, 11vw, 4rem);
     }
 
