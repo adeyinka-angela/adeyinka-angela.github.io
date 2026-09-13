@@ -347,3 +347,153 @@ a {
 .about-details p {
     margin-bottom: 24px;
 }
+
+
+/* ================================
+   PROJECTS SECTION
+================================ */
+
+.projects-section {
+    padding-top: 100px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 430px;
+    padding: 32px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--accent);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+.project-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+.project-number {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.project-type {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+}
+
+.project-card-content {
+    flex: 1;
+}
+
+.project-card h3 {
+    max-width: 520px;
+    margin-bottom: 18px;
+    font-size: 1.7rem;
+}
+
+.project-question {
+    margin-bottom: 18px;
+    color: var(--text);
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.project-card-content > p:not(.project-question) {
+    max-width: 520px;
+    margin-bottom: 28px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.project-tags span {
+    padding: 7px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    color: var(--muted);
+    background: var(--bg);
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--accent);
+
+    transition:
+        gap 0.25s ease,
+        color 0.25s ease;
+}
+
+.project-link span {
+    transition: transform 0.25s ease;
+}
+
+.project-link:hover {
+    color: var(--accent-dark);
+    gap: 12px;
+}
+
+.project-link:hover span {
+    transform: translateX(3px);
+}
+
+
+/* ================================
+   PROJECTS — MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        min-height: 400px;
+        padding: 28px;
+    }
+
+    .project-card-top {
+        margin-bottom: 45px;
+    }
+
+    .project-card h3 {
+        font-size: 1.5rem;
+    }
+
+}
