@@ -844,3 +844,22 @@ a {
     }
 
 }
+
+
+.skills > .skills {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 12px;
+}
+
+.skills > .skills::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.75em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    transform: translateY(-50%);
+}
