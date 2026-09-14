@@ -863,3 +863,115 @@ a {
     background: var(--accent);
     transform: translateY(-50%);
 }
+
+
+/* ================================
+   BUSINESS PROBLEM & OBJECTIVES
+================================ */
+
+.problem-section {
+    padding-top: 40px;
+}
+
+.problem-highlight {
+    padding: 32px;
+    margin-bottom: 35px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 16px;
+}
+
+.problem-label {
+    display: block;
+    margin-bottom: 18px;
+
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+}
+
+.problem-highlight p {
+    margin-bottom: 18px;
+    color: var(--text);
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.problem-highlight p:last-child {
+    margin-bottom: 0;
+}
+
+.problem-highlight strong {
+    font-weight: 700;
+}
+
+.problem-explanation {
+    margin-bottom: 50px;
+}
+
+.problem-explanation p {
+    margin-bottom: 20px;
+}
+
+
+/* ================================
+   ANALYSIS OBJECTIVES
+================================ */
+
+.objectives-block {
+    padding-top: 35px;
+    border-top: 1px solid var(--border);
+}
+
+.objectives-block .eyebrow {
+    margin-bottom: 25px;
+}
+
+.objectives-list {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.objectives-list li {
+    margin-bottom: 18px;
+    padding-left: 7px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.objectives-list li::marker {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+
+/* ================================
+   BUSINESS PROBLEM — MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .problem-section {
+        padding-top: 20px;
+    }
+
+    .problem-highlight {
+        padding: 24px;
+    }
+
+    .problem-highlight p {
+        font-size: 1rem;
+    }
+
+    .problem-explanation {
+        margin-bottom: 40px;
+    }
+
+    .objectives-list {
+        padding-left: 20px;
+    }
+
+}
