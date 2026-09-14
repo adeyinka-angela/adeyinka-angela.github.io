@@ -975,3 +975,147 @@ a {
     }
 
 }
+
+
+/* ================================
+   ANALYTICAL APPROACH
+================================ */
+
+.approach-section {
+    padding-top: 40px;
+}
+
+.approach-intro {
+    max-width: 650px;
+    margin-bottom: 45px;
+}
+
+.approach-intro p {
+    color: var(--text);
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+
+/* ================================
+   APPROACH STEPS
+================================ */
+
+.approach-steps {
+    position: relative;
+}
+
+/* Vertical line connecting the steps */
+
+.approach-steps::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    bottom: 20px;
+    width: 1px;
+    background: var(--border);
+}
+
+.approach-step {
+    position: relative;
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 22px;
+    margin-bottom: 38px;
+}
+
+.approach-step:last-child {
+    margin-bottom: 0;
+}
+
+.approach-number {
+    position: relative;
+    z-index: 2;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+
+    background: var(--bg);
+    color: var(--accent);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.approach-step-content {
+    padding-bottom: 8px;
+}
+
+.approach-tool {
+    display: inline-block;
+    margin-bottom: 9px;
+
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+}
+
+.approach-step-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.approach-step-content p {
+    margin-bottom: 0;
+    font-size: 0.98rem;
+    line-height: 1.75;
+}
+
+
+/* ================================
+   APPROACH MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .approach-section {
+        padding-top: 20px;
+    }
+
+    .approach-intro {
+        margin-bottom: 38px;
+    }
+
+    .approach-intro p {
+        font-size: 1rem;
+    }
+
+    .approach-step {
+        grid-template-columns: 38px 1fr;
+        gap: 17px;
+        margin-bottom: 32px;
+    }
+
+    .approach-steps::before {
+        left: 18px;
+    }
+
+    .approach-number {
+        width: 38px;
+        height: 38px;
+        font-size: 0.68rem;
+    }
+
+    .approach-step-content h3 {
+        font-size: 1.08rem;
+    }
+
+    .approach-step-content p {
+        font-size: 0.95rem;
+    }
+
+}
