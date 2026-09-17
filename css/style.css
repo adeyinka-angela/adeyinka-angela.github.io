@@ -1119,3 +1119,95 @@ a {
     }
 
 }
+
+/* ================================
+   APPROACH EVIDENCE
+================================ */
+
+.approach-evidence {
+    margin-top: 22px;
+}
+
+.approach-evidence img {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.approach-evidence a:hover img {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.approach-evidence > span {
+    display: block;
+    margin-top: 8px;
+
+    font-size: 0.72rem;
+    color: var(--muted);
+}
+
+.evidence-link {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 11px 17px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background: var(--surface);
+    color: var(--text);
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease;
+}
+
+.evidence-link:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.evidence-placeholder {
+    display: inline-block;
+
+    padding: 12px 16px;
+
+    border: 1px dashed var(--border);
+    border-radius: 10px;
+
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-style: italic;
+}
+
+
+/* ================================
+   APPROACH EVIDENCE — MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .approach-evidence img {
+        max-width: 100%;
+    }
+
+    .evidence-link {
+        font-size: 0.78rem;
+    }
+
+}
