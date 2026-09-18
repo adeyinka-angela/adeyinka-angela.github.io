@@ -1212,6 +1212,9 @@ a {
 
 }
 
+
+
+
 .findings-section {
     padding-top: 40px;
 }
@@ -1276,5 +1279,86 @@ a {
 
     .finding p {
         font-size: 0.95rem;
+    }
+}
+
+
+
+
+.results-section {
+    padding-top: 40px;
+}
+
+.results-content {
+    max-width: 720px;
+}
+
+.results-block {
+    margin-bottom: 32px;
+}
+
+.results-block p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.85;
+}
+
+.results-block p:last-child {
+    margin-bottom: 0;
+}
+
+.results-block strong,
+.results-action strong {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.results-action {
+    margin-top: 45px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border);
+}
+
+.results-action .eyebrow {
+    margin-bottom: 20px;
+}
+
+.results-action > p:not(.eyebrow) {
+    margin-bottom: 24px;
+    font-size: 1rem;
+    line-height: 1.85;
+}
+
+.results-takeaway {
+    padding: 22px 24px;
+    border-left: 3px solid var(--accent);
+    background: var(--surface);
+    border-radius: 0 12px 12px 0;
+    color: var(--text);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .results-section {
+        padding-top: 20px;
+    }
+
+    .results-block {
+        margin-bottom: 26px;
+    }
+
+    .results-block p,
+    .results-action > p:not(.eyebrow) {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    .results-action {
+        margin-top: 35px;
+        padding-top: 25px;
+    }
+
+    .results-takeaway {
+        padding: 18px 20px;
     }
 }
