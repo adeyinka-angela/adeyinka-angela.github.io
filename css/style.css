@@ -349,6 +349,14 @@ a {
 }
 
 
+.skills-list {
+   list-style-type: disc; /* this gives you bullets */
+   columns: 2; /* makes it 2 columns. Use 3 if you have more skills */ 
+   gap: 20px;
+   padding-left: 20px;
+}
+
+
 /* ================================
    PROJECTS SECTION
 ================================ */
