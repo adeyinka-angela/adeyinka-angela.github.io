@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TeleComX Customer Churn Analysis | Adeyinka Angela</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <a href="../index.html" class="brand">Adeyinka Angela</a>
+
+        <nav class="nav-links">
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#skills">Skills</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+
+    <!-- PROJECT HERO -->
+
+    <section class="case-study-hero">
+
+        <div class="case-study-navigation">
+            <a href="../index.html#projects" class="back-link">
+                ← Back to projects
+            </a>
+        </div>
+
+        <p class="eyebrow">
+            PROJECT 02 · CUSTOMER ANALYTICS
+        </p>
+
+        <h1>
+            TeleComX Customer Churn
+            <span>Analysis & Prediction</span>
+        </h1>
+
+        <p class="case-study-question">
+            Why are customers leaving, who is most likely to leave next,
+            and what can the business do to retain them?
+        </p>
+
+        <div class="project-meta">
+
+            <div class="meta-item">
+                <span>CLIENT / COMPANY</span>
+                <strong>TeleComX</strong>
+            </div>
+
+            <div class="meta-item">
+                <span>CLIENT TYPE</span>
+                <strong>Fictional Telecommunications Company</strong>
+            </div>
+
+            <div class="meta-item">
+                <span>DATASET</span>
+                <strong>7,043 Customers</strong>
+            </div>
+
+            <div class="meta-item">
+                <span>PROJECT TYPE</span>
+                <strong>Customer Churn & Predictive Analytics</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BUSINESS SNAPSHOT -->
+
+    <section class="case-study-kpi-section">
+
+        <div class="kpi-heading">
+
+            <p class="eyebrow">
+                BUSINESS SNAPSHOT
+            </p>
+
+            <h2>
+                The numbers
+                <span>at a glance.</span>
+            </h2>
+
+            <p>
+                A quick view of the customer base and the scale of the
+                churn problem identified in the analysis.
+            </p>
+
+        </div>
+
+
+        <div class="case-study-kpis">
+
+            <div class="case-kpi">
+                <span>TOTAL CUSTOMERS</span>
+                <strong>7,043</strong>
+                <small>Customers analysed</small>
+            </div>
+
+            <div class="case-kpi">
+                <span>CHURN RATE</span>
+                <strong>26.54%</strong>
+                <small>Customers who churned</small>
+            </div>
+
+            <div class="case-kpi">
+                <span>CHURNED CUSTOMERS</span>
+                <strong>1,869</strong>
+                <small>Customers lost</small>
+            </div>
+
+            <div class="case-kpi">
+                <span>AVG. MONTHLY CHARGE</span>
+                <strong>$64.76</strong>
+                <small>Across the customer base</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT OVERVIEW -->
+
+    <section class="case-study-section">
+
+        <div class="case-study-heading">
+
+            <p class="eyebrow">
+                01 · PROJECT OVERVIEW
+            </p>
+
+            <h2>
+                Understanding
+                <span>customer churn.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="case-study-content">
+
+            <p>
+                TeleComX is a mid-size telecommunications company offering
+                phone, internet and streaming services. Management had
+                observed an increase in customer churn and needed to
+                understand why customers were leaving and where the
+                greatest retention risks existed.
+            </p>
+
+            <p>
+                I approached the problem as an end-to-end business analytics
+                exercise, combining customer analysis, SQL, Python,
+                exploratory data analysis, predictive modelling and
+                Power BI to move from understanding the problem to
+                identifying customers at risk and translating the findings
+                into retention strategies.
+            </p>
+
+            <p>
+                The analysis covered <strong>7,043 customer records</strong>
+                and examined customer behaviour, contract type, payment
+                method, internet service, tenure, charges and other
+                characteristics associated with churn.
+            </p>
+
+        </div>
+
+    </section>
+
+
+  
+  <section class="case-study-section problem-section">
+
+    <div class="case-study-heading">
+
+        <p class="eyebrow">
+            02 · BUSINESS PROBLEM
+        </p>
+
+        <h2>
+            Customers were leaving.
+            <span>The business needed to know why.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="case-study-content">
+
+        <div class="problem-highlight">
+
+            <span class="problem-label">
+                THE CENTRAL BUSINESS PROBLEM
+            </span>
+
+            <p>
+                TeleComX was experiencing an increasing customer churn
+                problem, with churn reaching <strong>26.54%</strong>
+                across the 7,043-customer base.
+            </p>
+
+            <p>
+                Every customer who leaves represents lost recurring
+                revenue and additional pressure to replace that customer.
+                Management needed to understand the patterns behind
+                churn and identify where retention efforts should focus.
+            </p>
+
+        </div>
+
+
+        <div class="problem-explanation">
+
+            <p>
+                Rather than looking at churn as a single overall number,
+                the analysis examined customer characteristics and
+                behaviour to determine which groups were most vulnerable
+                to leaving.
+            </p>
+
+        </div>
+
+
+        <div class="objectives-block">
+
+            <p class="eyebrow">
+                BUSINESS OBJECTIVES
+            </p>
+
+            <ul class="objectives-list">
+
+                <li>
+                    Understand which customers are most likely to churn
+                    and which characteristics distinguish them.
+                </li>
+
+                <li>
+                    Identify the key factors and customer behaviours
+                    associated with churn.
+                </li>
+
+                <li>
+                    Build a predictive model that can flag customers
+                    who may churn before they leave.
+                </li>
+
+                <li>
+                    Translate the findings into practical retention
+                    strategies for the business.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+  <section class="case-study-section approach-section">
+
+    <div class="case-study-heading">
+
+        <p class="eyebrow">
+            03 · ANALYTICAL APPROACH
+        </p>
+
+        <h2>
+            From customer data
+            <span>to retention strategy.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="case-study-content">
+
+        <div class="approach-intro">
+
+            <p>
+                I approached the churn problem as an end-to-end analytics
+                exercise — starting with data quality and customer behaviour,
+                then moving through SQL analysis, exploratory analysis,
+                predictive modelling and finally business recommendations.
+            </p>
+
+        </div>
+
+
+        <div class="approach-steps">
+
+
+            <!-- STEP 01 -->
+
+            <div class="approach-step">
+
+                <div class="approach-number">
+                    01
+                </div>
+
+                <div class="approach-step-content">
+
+                    <span class="approach-tool">
+                        PYTHON · DATA UNDERSTANDING
+                    </span>
+
+                    <h3>
+                        Prepare and understand the customer data
+                    </h3>
+
+                    <p>
+                        I inspected the 7,043 customer records, validated
+                        data types and investigated data-quality issues.
+                        Converting the TotalCharges field from text to
+                        numeric exposed 11 hidden blank values, which were
+                        handled as zero for customers with zero tenure.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 02 -->
+
+            <div class="approach-step">
+
+                <div class="approach-number">
+                    02
+                </div>
+
+                <div class="approach-step-content">
+
+                    <span class="approach-tool">
+                        SQL · SQLITE
+                    </span>
+
+                    <h3>
+                        Answer the core business questions
+                    </h3>
+
+                    <p>
+                        I used SQLite to write eight business-focused
+                        queries examining churn by contract type, payment
+                        method, internet service, tenure, customer
+                        characteristics and other relevant factors.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 03 -->
+
+            <div class="approach-step">
+
+                <div class="approach-number">
+                    03
+                </div>
+
+                <div class="approach-step-content">
+
+                    <span class="approach-tool">
+                        PYTHON · EXPLORATORY DATA ANALYSIS
+                    </span>
+
+                    <h3>
+                        Explore the patterns behind churn
+                    </h3>
+
+                    <p>
+                        I used Python to examine customer behaviour through
+                        visual analysis, comparing churn across contracts,
+                        tenure, internet service, payment methods, charges
+                        and support services.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 04 -->
+
+            <div class="approach-step">
+
+                <div class="approach-number">
+                    04
+                </div>
+
+                <div class="approach-step-content">
+
+                    <span class="approach-tool">
+                        PYTHON · FEATURE ENGINEERING
+                    </span>
+
+                    <h3>
+                        Prepare the data for prediction
+                    </h3>
+
+                    <p>
+                        I transformed the customer data into a format suitable
+                        for machine learning by encoding categorical variables,
+                        scaling features and creating a stratified train-test
+                        split while preserving the churn distribution.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 05 -->
+
+            <div class="approach-step">
+
+                <div class="approach-number">
+                    05
+                </div>
+
+                <div class="approach-step-content">
+
+                    <span class="approach-tool">
+                        MACHINE LEARNING · SCIKIT-LEARN
+                    </span>
+
+                    <h3>
+                        Predict customers at risk of churn
+                    </h3>
+
+                    <p>
+                        I trained and compared Logistic Regression, Decision
+                        Tree and Random Forest models. Model performance was
+                        evaluated using Accuracy, Precision, Recall, F1 Score
+                        and ROC-AUC, with Logistic Regression selected based
+                        on its performance and interpretability.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 06 -->
+
+            <div class="approach-step">
+
+                <div class="approach-number">
+                    06
+                </div>
+
+                <div class="approach-step-content">
+
+                    <span class="approach-tool">
+                        POWER BI
+                    </span>
+
+                    <h3>
+                        Turn the analysis into an executive view
+                    </h3>
+
+                    <p>
+                        I translated the analytical findings into a
+                        three-page Power BI dashboard covering the Executive
+                        Summary, Customer Analysis and Retention Insights,
+                        making the results easier for non-technical
+                        stakeholders to interpret.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 07 -->
+
+            <div class="approach-step">
+
+                <div class="approach-number">
+                    07
+                </div>
+
+                <div class="approach-step-content">
+
+                    <span class="approach-tool">
+                        BUSINESS ANALYSIS · RETENTION STRATEGY
+                    </span>
+
+                    <h3>
+                        Translate findings into action
+                    </h3>
+
+                    <p>
+                        I connected the analytical findings to five targeted
+                        retention strategies focused on contract migration,
+                        payment methods, the first-year customer experience,
+                        fiber service and protective service adoption.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+  
+</main>
+
+</body>
+</html>
