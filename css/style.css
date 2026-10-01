@@ -694,11 +694,11 @@ a {
     top: 120px;
 }
 
-.case-study-heading h3 {
+.case-study-heading h2 {
     margin-bottom: 0;
 }
 
-.case-study-heading h3 span {
+.case-study-heading h2 span {
     color: var(--accent);
 }
 
@@ -740,7 +740,7 @@ a {
         margin-bottom: 40px;
     }
 
-    .case-study-hero h3 {
+    .case-study-hero h2 {
         font-size: clamp(2.5rem, 11vw, 4rem);
     }
 
