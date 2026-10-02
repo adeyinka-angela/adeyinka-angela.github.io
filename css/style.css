@@ -1370,3 +1370,106 @@ a {
         padding: 18px 20px;
     }
 }
+
+
+/* ================================
+   CONTACT SECTION
+================================ */
+
+#contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#contact h2 {
+    margin-bottom: 18px;
+}
+
+#contact > p {
+    max-width: 620px;
+    margin-bottom: 32px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Contact links */
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 20px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background: var(--surface);
+    color: var(--text);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.contact-links a:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* Primary contact link */
+
+.contact-links a.contact-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+.contact-links a.contact-primary:hover {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+    color: white;
+}
+
+
+/* ================================
+   CONTACT — MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    #contact {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    #contact > p {
+        font-size: 0.98rem;
+    }
+
+    .contact-links {
+        gap: 10px;
+    }
+
+    .contact-links a {
+        min-height: 46px;
+        padding: 11px 17px;
+        font-size: 0.85rem;
+    }
+
+       }
